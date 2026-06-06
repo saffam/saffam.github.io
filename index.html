@@ -27,6 +27,11 @@
             border-bottom: 2px solid #3498db;
             padding-bottom: 10px;
         }
+        h3 {
+            font-size: 1.2em;
+            color: #34495e;
+            margin-top: 25px;
+        }
         .subtitle {
             font-size: 1.2em;
             color: #666;
@@ -88,6 +93,16 @@
             color: #666;
             font-size: 0.95em;
         }
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+        hr {
+            margin: 30px 0;
+            border: none;
+            border-top: 1px solid #ddd;
+        }
     </style>
 </head>
 <body>
@@ -129,13 +144,35 @@
 
     <div class="section">
         <h2>Projects</h2>
-        <p><em>Building health data analytics projects in public. Code and data on GitHub.</em></p>
+        
+        <h3>Project 1: Global Health Expenditure Efficiency</h3>
+        <p><em>Status: Complete | Tools: Python, pandas, matplotlib | Data: WHO Global Health Expenditure Database (2015-2022)</em></p>
+        
+        <p><strong>Question:</strong> Which countries achieve the most efficient health financing — high government share, low out-of-pocket burden, and sustainable spending relative to GDP?</p>
+        
+        <p><strong>Key Findings:</strong></p>
         <ul>
-            <li><span class="status">In Progress:</span> Italian Hospital Efficiency Dashboard — Python, pandas, Tableau Public</li>
-            <li><span class="status">Planned:</span> Digital Health User Retention Analysis — cohort analysis, churn prediction</li>
-            <li><span class="status">Planned:</span> Health Policy Brief — NHS vs Italian SSN digital infrastructure comparison</li>
-            <li><span class="status">Planned:</span> FHIR Data Exploration — synthetic health data, interoperability standards</li>
+            <li><strong>Spending gap is 280x:</strong> US spends $10,701 per capita. Pakistan spends $38.</li>
+            <li><strong>Government share matters:</strong> High-income countries (Sweden, Germany, UK) finance 80-90% through government. Low-income countries (Nigeria, India, Pakistan) rely heavily on out-of-pocket payments.</li>
+            <li><strong>US is an outlier:</strong> Spends 16.9% of GDP on health — nearly double European levels — with mixed outcomes.</li>
+            <li><strong>European efficiency:</strong> Germany, France, Sweden achieve comparable health outcomes at 11-12% of GDP, versus the US at 17%.</li>
+            <li><strong>The out-of-pocket trap:</strong> In Nigeria, India, and Pakistan, households bear 70-75% of costs directly, creating access barriers and financial catastrophe.</li>
         </ul>
+        
+        <p><strong>Policy Implications:</strong></p>
+        <ul>
+            <li>For high-income countries: The US model is expensive. European mixed models offer better value.</li>
+            <li>For middle-income countries: Increasing government health share reduces household burden and improves access.</li>
+            <li>For low-income countries: External aid and domestic resource mobilization are critical to escape the out-of-pocket trap.</li>
+        </ul>
+        
+        <p><img src="health_expenditure_charts.png" alt="Health Expenditure Analysis Charts"></p>
+        
+        <p><a href="https://github.com/saffam/saffam.github.io/blob/main/health_expenditure_charts.png">View full chart</a> | <a href="https://github.com/saffam/saffam.github.io">View code on GitHub</a></p>
+        
+        <hr>
+        
+        <p><em>Coming next: Digital Health User Retention Analysis — cohort analysis and churn prediction using synthetic app data.</em></p>
     </div>
 
     <div class="section">
@@ -163,7 +200,7 @@
         <h2>Contact</h2>
         <p>Email: <a href="mailto:saffa.muhammadsaleem@studio.unibo.it">saffa.muhammadsaleem@studio.unibo.it</a></p>
         <p>GitHub: <a href="https://github.com/saffam">github.com/saffam</a></p>
-        <p>LinkedIn: <a href="#">Add your LinkedIn link here</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/saffa-mariam">linkedin.com/in/saffa-mariam</a></p>
     </div>
 
 </body>
